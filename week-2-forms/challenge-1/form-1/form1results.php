@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,22 +15,23 @@
         }
     </style>
 </head>
+
 <body>
 
-<?php
-$age = $_GET["leeftijd"];
-$multiplyn = 4;
-$multi = $age * $multiplyn;
+    <?php
+    $age = $_GET["leeftijd"];
+    $multiplyn = 4;
+    $multi = $age * $multiplyn;
 
 
 
 
 
-echo $_GET["voornaam"] ." ". $_GET["tussenvoegsel"] ." ". $_GET["achternaam"] . "<br>" . $multi;
+    echo $_GET["voornaam"] . " " . $_GET["tussenvoegsel"] . " " . $_GET["achternaam"] . "<br>" . $multi;
 
 
-?>
+    ?>
 
 </body>
-</html>
 
+</html>
