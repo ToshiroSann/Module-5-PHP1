@@ -1,15 +1,15 @@
 <form action="./form1results.php" method="GET">
                 <div>
-                    <input required id="first" type="text" placeholder="Voornaam" class="box" name="voornaam">
-                    <input type="text" placeholder="Tussenvoegsel" class="box" name="tussenvoegsel">
-                    <input required type="text" placeholder="Achternaam" class="box" name="achternaam">
+                    <input required id="first" type="text" placeholder="Voornaam"  name="voornaam">
+                    <input type="text" placeholder="Tussenvoegsel"  name="tussenvoegsel">
+                    <input required type="text" placeholder="Achternaam"  name="achternaam">
                 </div>
 
                 <div>
-                    <input required type="text" placeholder="Leeftijd" class="box" name="leeftijd">
+                    <input required type="text" placeholder="Leeftijd"  name="leeftijd">
                 </div>
 
-                <select id="second" type="checked" placeholder="Kleur" class="box" name="color">
+                <select id="second" type="checked" placeholder="Kleur" name="color">
                
                 <option  value="blue">Blauw</option>
                 <option  value="green">Groen</option>
