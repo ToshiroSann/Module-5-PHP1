@@ -11,6 +11,7 @@
 
     <select id="second" type="checked" placeholder="Kleur" name="color">
 
+        <option selected disabled value="">Kleur</option>
         <option value="blue">Blauw</option>
         <option value="green">Groen</option>
         <option value="yellow">Geel</option>
