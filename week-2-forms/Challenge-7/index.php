@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bingo</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <?php
+    for ($x = 1; $x <= 24; $x++) {
+        echo "Bingokaart $x <br>";
+        ?>
+
     <div class="clear"></div>
     <div id="cardcenter">
         <div class="card">
@@ -23,20 +28,20 @@
 
             <?php
             $colors = [
-            ["color" => "red", "translation" => "rood", "textcolor"=>"black"], 
-            ["color" => "yellow", "translation" => "geel", "textcolor"=>"black"], 
-            ["color" => "blue", "translation" => "blauw", "textcolor"=>"black"], 
-            ["color" => "green", "translation" => "groen", "textcolor"=>"black"], 
-            ["color" => "orange", "translation" => "oranje", "textcolor"=>"black"], 
-            ["color" => "purple", "translation" => "paars", "textcolor"=>"black"], 
-            ["color" => "black", "translation" => "zwart", "textcolor"=>"white"], 
-            ["color" => "white", "translation" => "wit", "textcolor"=>"black"], 
-            ["color" => "grey", "translation" => "grijs", "textcolor"=>"black"], 
-            ["color" => "brown", "translation" => "bruin", "textcolor"=>"black"], 
-            ["color" => "pink", "translation" => "roze", "textcolor"=>"black"], 
-            ["color" => "indigo", "translation" => "indigo", "textcolor"=>"black"], 
-            ["color" => "turquoise", "translation" => "turquoise", "textcolor"=>"black"], 
-            ["color" => "beige", "translation" => "beige", "textcolor"=>"black"]
+                ["color" => "red", "translation" => "rood", "textcolor" => "black"],
+                ["color" => "yellow", "translation" => "geel", "textcolor" => "black"],
+                ["color" => "blue", "translation" => "blauw", "textcolor" => "black"],
+                ["color" => "green", "translation" => "groen", "textcolor" => "black"],
+                ["color" => "orange", "translation" => "oranje", "textcolor" => "black"],
+                ["color" => "purple", "translation" => "paars", "textcolor" => "black"],
+                ["color" => "black", "translation" => "zwart", "textcolor" => "white"],
+                ["color" => "white", "translation" => "wit", "textcolor" => "black"],
+                ["color" => "grey", "translation" => "grijs", "textcolor" => "black"],
+                ["color" => "brown", "translation" => "bruin", "textcolor" => "black"],
+                ["color" => "pink", "translation" => "roze", "textcolor" => "black"],
+                ["color" => "indigo", "translation" => "indigo", "textcolor" => "black"],
+                ["color" => "turquoise", "translation" => "turquoise", "textcolor" => "black"],
+                ["color" => "beige", "translation" => "beige", "textcolor" => "black"]
             ];
 
             shuffle($colors);
@@ -60,7 +65,9 @@
             </div>
         </div>
     </div>
-
+    <?php
+    }
+    ?>
 </body>
 
 </html>
