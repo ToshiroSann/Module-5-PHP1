@@ -30,16 +30,16 @@
             $colors = [
                 ["color" => "red", "translation" => "rood", "textcolor" => "black"],
                 ["color" => "yellow", "translation" => "geel", "textcolor" => "black"],
-                ["color" => "blue", "translation" => "blauw", "textcolor" => "black"],
+                ["color" => "blue", "translation" => "blauw", "textcolor" => "white"],
                 ["color" => "green", "translation" => "groen", "textcolor" => "black"],
                 ["color" => "orange", "translation" => "oranje", "textcolor" => "black"],
-                ["color" => "purple", "translation" => "paars", "textcolor" => "black"],
+                ["color" => "purple", "translation" => "paars", "textcolor" => "white"],
                 ["color" => "black", "translation" => "zwart", "textcolor" => "white"],
                 ["color" => "white", "translation" => "wit", "textcolor" => "black"],
                 ["color" => "grey", "translation" => "grijs", "textcolor" => "black"],
                 ["color" => "brown", "translation" => "bruin", "textcolor" => "black"],
                 ["color" => "pink", "translation" => "roze", "textcolor" => "black"],
-                ["color" => "indigo", "translation" => "indigo", "textcolor" => "black"],
+                ["color" => "indigo", "translation" => "indigo", "textcolor" => "white"],
                 ["color" => "turquoise", "translation" => "turquoise", "textcolor" => "black"],
                 ["color" => "beige", "translation" => "beige", "textcolor" => "black"]
             ];
