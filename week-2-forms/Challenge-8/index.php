@@ -24,7 +24,7 @@ $birthday = "29th June";
 $days = round(abs(strtotime($birthday)-time()) / 86400);
 echo $days." days";
 
-$date1 = '2006-06-29';
+$date1 = '2006-06-03';
 $date2 = '2023-01-19';
 
 $ts1 = strtotime($date1);
