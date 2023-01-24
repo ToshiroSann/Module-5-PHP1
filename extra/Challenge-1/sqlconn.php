@@ -1,21 +1,28 @@
 <?php
-$conn = mysqli_connect($servername, $username, $password);
+$kenteken = $_POST['kenteken'];
+$merk = $_POST['merk'];
+$bouwjaar = $_POST['bouwjaar'];
+$prijs = $_POST['prijs'];
+$kleur = $_POST['kleur'];
+// $image = $_POST['image'];
 
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
+$target_dir = "uploads/";
+// $target_file = $target_dir . basename($_FILES["image"]["name"]);
+// $images = file_get_contents($_FILES['image']['tmp_name']);
+
+//Datebase Create
+
+$conn = new mysqli('localhost', 'root', '', 'school');
+if ($conn->connect_error){
+    die('Connection Failed  : '.$conn->connect_error);
+}else{
+    $stmt = $conn->prepare("insert into autodb (kenteken, merk, bouwjaar, prijs, kleur)
+    values(?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssiis",$kenteken, $merk, $bouwjaar, $prijs, $kleur);
+    echo("bericht succesvol verzonden....");
+    echo("Bedankt voor jouw feedback op onze site");
+    $stmt->execute();
+    $stmt->close();
+    $conn->close();
 }
-
-$sql = "SELECT id, firstname, lastname FROM MyGuests";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-
-  while($row = mysqli_fetch_assoc($result)) {
-    echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
-  }
-} else {
-  echo "";
-}
-
-mysqli_close($conn);
 ?>

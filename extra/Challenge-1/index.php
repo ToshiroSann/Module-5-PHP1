@@ -7,13 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-<form action="" method="GET">
+<form action="sqlconn.php" method="POST">
     <div>
         <input required id="kenteken" type="text" placeholder="kenteken" name="kenteken"><br>
         <input type="text" placeholder="merk" name="merk"><br>
         <input required type="text" placeholder="kleur" name="kleur"><br>
-        <input type="date" placeholder="bouwjaar" name="bouwjaar"><br>
+        <input type="number" placeholder="bouwjaar" name="bouwjaar"><br>
         <input type="text" placeholder="prijs" name="prijs">
+        <input type="submit">
     </div>
 </form>
 </body>
