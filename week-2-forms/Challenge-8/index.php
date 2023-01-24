@@ -2,7 +2,7 @@
 
 echo "24h Clock";
 
-date_default_timezone_set("Netherlands/Amsterdam");
+date_default_timezone_set("Europe/Amsterdam");
 echo "<br><br>The time in Amsterdam: <br> " . date("H:i:s");
 
 date_default_timezone_set("America/New_York");
@@ -12,15 +12,16 @@ date_default_timezone_set("Australia/Sydney");
 echo "<br><br>The time in Sydney: <br> " . date("H:i:s");
 
 echo "<br><br>Date";
+echo "<br>" . date("l") . "<br>";
 
-date_default_timezone_set("Netherlands/Amsterdam");
+date_default_timezone_set("Europe/Amsterdam");
 
 echo "<br><br>Today is " . date("d/m/Y") . "<br>";
 echo "<br<br>Today is " . date("l");
 
 echo "<br><br>My birthday is in<br>";
 
-$birthday = "29th June";
+$birthday = "3th June";
 $days = round(abs(strtotime($birthday)-time()) / 86400);
 echo $days." days";
 
