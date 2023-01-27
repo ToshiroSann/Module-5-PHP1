@@ -20,4 +20,7 @@ if ($conn->connect_error){
     $stmt->close();
     $conn->close();
 }
+
+$sql = "INSERT INTO MyGuests (kenteken, merk, bouwjaar)
+VALUES ('John', 'Doe', 'john@example.com')";
 ?>
