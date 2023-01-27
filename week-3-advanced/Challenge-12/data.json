@@ -1,0 +1,14 @@
+{
+    "name": "John Smith",
+    "age": 30,
+    "address": {
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001"
+    },
+    "book_name": "48 Laws of Power",
+    "author": "Robert Greene",
+    "pages": "463",
+    "ISBN": "9781861972781",
+    "genre": "Mindfulness"
+}
